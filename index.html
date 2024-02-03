@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ganhe dinheiro facil</title>
+    <style>
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Ganhe dinheiro facil</h1>
+    <h2>Seu dinheiro atual:</h2>
+    <h2 id="contador"> 0 </h2>
+    <input type="text" id="numero-pix" placeholder="Digite o número do Pix">
+    <button onclick="sacar()">Sacar</button>
+    <button onclick="iniciar()">Iniciar</button>
+    <div style="padding:30px;">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5164999486239524" crossorigin="anonymous"></script> 
+<!-- Dinheiro fácil --> 
+<ins class="adsbygoogle" style="display:block;background-color:rgb(200,200,200);" 
+data-ad-client="ca-pub-5164999486239524" data-ad-slot="1970291243"
+data-adtest="on"
+data-ad-format="auto" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+</div>
+
+    <script>
+let reais = 0;
+let cent = 0;
+var time = 0;
+var cli = 0;
+var intervalo;
+
+function sacar() {
+    const numeroPix = document.getElementById('numero-pix').value;
+
+    reais = 0;
+}
+
+function iniciar() {
+    
+    intervalo = setInterval(contador,1000)
+    cli++
+    if(cli == 2){
+        clearInterval(intervalo)
+    }
+}
+
+function contador() {
+    time++
+    if(time == 25){
+        cent=cent+10
+        time = 0
+    }
+    if(cent == 100){
+        reais++
+        cent = 0
+    }
+document.getElementById('contador').innerText= '     dinheiro: '+reais+':'+cent+'     tempo: '+time
+}
+
+    </script>
+</body>
+</html>
+
+
